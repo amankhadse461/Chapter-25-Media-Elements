@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using {Video And Audio} element to Display Audio and video content</title>
+</head>
+<body>
+    <!-- Video -->
+    <video width="480" controls poster="https://archive.org/download/WebmVp8Vorbis/webmvp8.gif" >
+        <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.webm" type="video/webm">
+        <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8_512kb.mp4" type="video/mp4">
+        <source src="https://archive.org/download/WebmVp8Vorbis/webmvp8.ogv" type="video/ogg">
+        Your browser doesn't support HTML5 video tag.
+    </video>
+
+    <!-- Audio -->
+    <!-- Simple audio playback -->
+    <audio src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" autoplay>
+    Your browser does not support the <code>audio</code> element.
+    </audio>
+    <!-- Audio playback with captions -->
+    <audio src="foo.ogg">
+    <track kind="captions" src="foo.en.vtt" srclang="en" label="English">
+    <track kind="captions" src="foo.sv.vtt" srclang="sv" label="Svenska">
+    </audio>
+
+</body>
+</html>
